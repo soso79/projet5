@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F00CF7A20760DE000996992 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F00CF7920760DE000996992 /* PhotoView.swift */; };
+		0F5648BF205BE1DF0024AD0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5648BE205BE1DF0024AD0B /* Default-568h@2x.png */; };
+		0F8AEDFA2059C4BA00CF8D55 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8AEDF92059C4BA00CF8D55 /* Delm-Medium.otf */; };
+		0F8AEDFC2059C4DB00CF8D55 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8AEDFB2059C4DB00CF8D55 /* ThirstySoftRegular.otf */; };
 		0FA2886F2051A961002590FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2886E2051A961002590FA /* AppDelegate.swift */; };
 		0FA288712051A961002590FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA288702051A961002590FA /* ViewController.swift */; };
 		0FA288742051A961002590FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA288722051A961002590FA /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F00CF7920760DE000996992 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		0F5648BE205BE1DF0024AD0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0F8AEDF92059C4BA00CF8D55 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
+		0F8AEDFB2059C4DB00CF8D55 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
 		0FA2886B2051A961002590FA /* instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA2886E2051A961002590FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FA288702051A961002590FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +43,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4F13CC205A87A4005C556D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F4F13CD205A87BB005C556D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FA288722051A961002590FA /* Main.storyboard */,
+				0F00CF7920760DE000996992 /* PhotoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F4F13CE205A87D1005C556D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FA288702051A961002590FA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0F4F13D1205A8DC4005C556D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FA288772051A961002590FA /* LaunchScreen.storyboard */,
+				0FA2886E2051A961002590FA /* AppDelegate.swift */,
+				0F8AEDF92059C4BA00CF8D55 /* Delm-Medium.otf */,
+				0F8AEDFB2059C4DB00CF8D55 /* ThirstySoftRegular.otf */,
+				0FA288752051A961002590FA /* Assets.xcassets */,
+				0FA2887A2051A961002590FA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0FA288622051A961002590FA = {
 			isa = PBXGroup;
 			children = (
+				0F5648BE205BE1DF0024AD0B /* Default-568h@2x.png */,
 				0FA2886D2051A961002590FA /* instagrid */,
 				0FA2886C2051A961002590FA /* Products */,
 			);
@@ -54,12 +100,10 @@
 		0FA2886D2051A961002590FA /* instagrid */ = {
 			isa = PBXGroup;
 			children = (
-				0FA2886E2051A961002590FA /* AppDelegate.swift */,
-				0FA288702051A961002590FA /* ViewController.swift */,
-				0FA288722051A961002590FA /* Main.storyboard */,
-				0FA288752051A961002590FA /* Assets.xcassets */,
-				0FA288772051A961002590FA /* LaunchScreen.storyboard */,
-				0FA2887A2051A961002590FA /* Info.plist */,
+				0F4F13CE205A87D1005C556D /* Controller */,
+				0F4F13CD205A87BB005C556D /* View */,
+				0F4F13CC205A87A4005C556D /* Model */,
+				0F4F13D1205A8DC4005C556D /* Supporting Files */,
 			);
 			path = instagrid;
 			sourceTree = "<group>";
@@ -125,7 +169,10 @@
 			files = (
 				0FA288792051A961002590FA /* LaunchScreen.storyboard in Resources */,
 				0FA288762051A961002590FA /* Assets.xcassets in Resources */,
+				0F8AEDFC2059C4DB00CF8D55 /* ThirstySoftRegular.otf in Resources */,
+				0F8AEDFA2059C4BA00CF8D55 /* Delm-Medium.otf in Resources */,
 				0FA288742051A961002590FA /* Main.storyboard in Resources */,
+				0F5648BF205BE1DF0024AD0B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F00CF7A20760DE000996992 /* PhotoView.swift in Sources */,
 				0FA288712051A961002590FA /* ViewController.swift in Sources */,
 				0FA2886F2051A961002590FA /* AppDelegate.swift in Sources */,
 			);
@@ -275,12 +323,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = instagrid/Info.plist;
+				DEVELOPMENT_TEAM = 594D8WX9K7;
+				INFOPLIST_FILE = "$(SRCROOT)/instagrid/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.sofianebahri.instagrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,12 +338,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = instagrid/Info.plist;
+				DEVELOPMENT_TEAM = 594D8WX9K7;
+				INFOPLIST_FILE = "$(SRCROOT)/instagrid/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.sofianebahri.instagrid;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
