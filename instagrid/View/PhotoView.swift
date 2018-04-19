@@ -10,12 +10,12 @@ import UIKit
 
 class PhotoView: UIView {
     
-
-  @IBOutlet private var monBoutton: UIButton!
-  @IBOutlet private var monBoutton2: UIButton!
-  @IBOutlet private var monBoutton3: UIButton!
-  @IBOutlet private var monBoutton4: UIButton!
-  @IBOutlet private var stack: UIStackView!
+   @IBOutlet private var label: UILabel!
+   @IBOutlet private var monBoutton: UIButton!
+   @IBOutlet private var monBoutton2: UIButton!
+   @IBOutlet private var monBoutton3: UIButton!
+   @IBOutlet private var monBoutton4: UIButton!
+  
     
     enum Style {
         case layout1, layout2, layout3
@@ -32,7 +32,9 @@ class PhotoView: UIView {
         switch style {
         case .layout1:
             monBoutton .isHidden = true
+            monBoutton3 .isHidden = false
         case .layout2:
+            monBoutton .isHidden = false
             monBoutton3 .isHidden = true
         case .layout3:
             monBoutton .isHidden = false

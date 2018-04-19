@@ -56,8 +56,11 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi7-Sp-7o7">
                                                         <rect key="frame" x="165" y="0.0" width="160" height="160"/>
-                                                        <color key="backgroundColor" red="0.052614964540000003" green="0.39711064099999999" blue="0.61329507829999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="openButtonLibrairy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLc-fb-7qo"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -66,12 +69,12 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsf-pM-wLf">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
-                                                        <color key="backgroundColor" red="0.95848555700000004" green="1" blue="0.62291714870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-ZE-znz">
                                                         <rect key="frame" x="165" y="0.0" width="160" height="160"/>
-                                                        <color key="backgroundColor" red="0.87635605569999997" green="0.25661589909999999" blue="0.36499479350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
@@ -88,11 +91,11 @@
                                     <constraint firstItem="Dg1-Jf-coA" firstAttribute="leading" secondItem="YPa-9b-fF7" secondAttribute="leading" constant="5" id="v2k-bw-Ba6"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="monBoutton" destination="ra4-uY-i8L" id="Xfx-ry-fmd"/>
-                                    <outlet property="monBoutton2" destination="hi7-Sp-7o7" id="iYw-TQ-hRm"/>
-                                    <outlet property="monBoutton3" destination="dsf-pM-wLf" id="tpy-tY-S6T"/>
-                                    <outlet property="monBoutton4" destination="fAq-ZE-znz" id="Je0-p0-rLw"/>
-                                    <outlet property="stack" destination="Dg1-Jf-coA" id="Pnf-wY-zQo"/>
+                                    <outlet property="label" destination="SFY-et-vEY" id="eeD-Rj-D42"/>
+                                    <outlet property="monBoutton" destination="ra4-uY-i8L" id="cux-H1-0re"/>
+                                    <outlet property="monBoutton2" destination="hi7-Sp-7o7" id="bUK-vO-jmr"/>
+                                    <outlet property="monBoutton3" destination="dsf-pM-wLf" id="6y8-f5-tGn"/>
+                                    <outlet property="monBoutton4" destination="fAq-ZE-znz" id="GO8-QT-QYF"/>
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-L6-90e">
@@ -100,12 +103,10 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3no-eS-2gH">
                                         <rect key="frame" x="0.0" y="0.0" width="108.5" height="114"/>
-                                        <color key="backgroundColor" red="0.54649619949999995" green="0.47616614610000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="didTapLayout1Button" destination="BYZ-38-t0r" eventType="touchUpInside" id="BDa-rg-eAT"/>
-                                            <action selector="didTapLayout1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wr2-mw-0df"/>
-                                            <action selector="didTapLayoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K51-FI-uTR"/>
+                                            <action selector="didTapLayout1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UqM-cY-fjt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wd-Mq-TZ3">
@@ -113,17 +114,15 @@
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="didTapLayout2Button" destination="BYZ-38-t0r" eventType="touchUpInside" id="cR6-qf-Ljk"/>
-                                            <action selector="didTapLayout2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pec-kK-nff"/>
+                                            <action selector="didTapLayout2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2h-ag-p3c"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLn-JW-cMv">
                                         <rect key="frame" x="226.5" y="0.0" width="108.5" height="114"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="didTapLayout3Button" destination="BYZ-38-t0r" eventType="touchUpInside" id="RvS-Xa-vbA"/>
-                                            <action selector="didTapLayout3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Bw-mA-DVJ"/>
+                                            <action selector="didTapLayout3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBk-a8-xCJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -150,12 +149,9 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="Layout1Button" destination="3no-eS-2gH" id="KQa-f4-vNA"/>
-                        <outlet property="Layout2Button" destination="2wd-Mq-TZ3" id="FsC-jM-SDY"/>
-                        <outlet property="Layout3Button" destination="FLn-JW-cMv" id="klw-xu-5Yl"/>
-                        <outlet property="instagrid" destination="SFY-et-vEY" id="R0E-wj-Cci"/>
-                        <outlet property="layoutstack" destination="Crp-L6-90e" id="D3M-wh-bD6"/>
-                        <outlet property="photoView" destination="YPa-9b-fF7" id="A3T-1i-QrQ"/>
+                        <outlet property="instagrid" destination="SFY-et-vEY" id="cQe-Fx-rSU"/>
+                        <outlet property="monBoutton2" destination="hi7-Sp-7o7" id="zyB-hm-fj1"/>
+                        <outlet property="photoView" destination="YPa-9b-fF7" id="LQA-dN-ASw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
