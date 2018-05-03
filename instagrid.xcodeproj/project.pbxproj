@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F00CF7A20760DE000996992 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F00CF7920760DE000996992 /* PhotoView.swift */; };
+		0F320223209B6C4400D5D007 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F320222209B6C4400D5D007 /* UIImage+extension.swift */; };
 		0F5648BF205BE1DF0024AD0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F5648BE205BE1DF0024AD0B /* Default-568h@2x.png */; };
 		0F8AEDFA2059C4BA00CF8D55 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8AEDF92059C4BA00CF8D55 /* Delm-Medium.otf */; };
 		0F8AEDFC2059C4DB00CF8D55 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8AEDFB2059C4DB00CF8D55 /* ThirstySoftRegular.otf */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0F00CF7920760DE000996992 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		0F320222209B6C4400D5D007 /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+extension.swift"; path = "instagrid/Supporting Files/UIImage+extension.swift"; sourceTree = SOURCE_ROOT; };
 		0F5648BE205BE1DF0024AD0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0F8AEDF92059C4BA00CF8D55 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		0F8AEDFB2059C4DB00CF8D55 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		0F4F13D1205A8DC4005C556D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F320222209B6C4400D5D007 /* UIImage+extension.swift */,
 				0FA288772051A961002590FA /* LaunchScreen.storyboard */,
 				0FA2886E2051A961002590FA /* AppDelegate.swift */,
 				0F8AEDF92059C4BA00CF8D55 /* Delm-Medium.otf */,
@@ -186,6 +189,7 @@
 				0F00CF7A20760DE000996992 /* PhotoView.swift in Sources */,
 				0FA288712051A961002590FA /* ViewController.swift in Sources */,
 				0FA2886F2051A961002590FA /* AppDelegate.swift in Sources */,
+				0F320223209B6C4400D5D007 /* UIImage+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

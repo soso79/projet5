@@ -50,14 +50,16 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                                         <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <state key="normal" title="Button">
-                                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
+                                                        <color key="tintColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="Combined Shape"/>
+                                                        <connections>
+                                                            <action selector="openButtonLibrairy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rpd-vL-XSD"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi7-Sp-7o7">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi7-Sp-7o7">
                                                         <rect key="frame" x="165" y="0.0" width="160" height="160"/>
                                                         <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <state key="normal" image="Combined Shape"/>
                                                         <connections>
                                                             <action selector="openButtonLibrairy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLc-fb-7qo"/>
                                                         </connections>
@@ -67,15 +69,27 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KcI-Nw-Xw5">
                                                 <rect key="frame" x="0.0" y="165" width="325" height="160"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsf-pM-wLf">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsf-pM-wLf">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                                         <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <color key="tintColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" image="Combined Shape">
+                                                            <color key="titleColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="openButtonLibrairy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gjs-7M-3RQ"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-ZE-znz">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-ZE-znz">
                                                         <rect key="frame" x="165" y="0.0" width="160" height="160"/>
                                                         <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Button"/>
+                                                        <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" image="Combined Shape">
+                                                            <color key="titleColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="openButtonLibrairy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCI-MD-acj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -83,6 +97,7 @@
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Dg1-Jf-coA" secondAttribute="bottom" constant="5" id="9PS-qK-4E5"/>
                                     <constraint firstAttribute="width" secondItem="YPa-9b-fF7" secondAttribute="height" multiplier="1:1" id="Cmi-Hy-jre"/>
@@ -96,6 +111,7 @@
                                     <outlet property="monBoutton2" destination="hi7-Sp-7o7" id="bUK-vO-jmr"/>
                                     <outlet property="monBoutton3" destination="dsf-pM-wLf" id="6y8-f5-tGn"/>
                                     <outlet property="monBoutton4" destination="fAq-ZE-znz" id="GO8-QT-QYF"/>
+                                    <outletCollection property="gestureRecognizers" destination="FcX-QK-mhZ" appends="YES" id="ouQ-XZ-fuB"/>
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-L6-90e">
@@ -144,20 +160,23 @@
                             <constraint firstItem="Crp-L6-90e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rRg-FZ-zJn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="4tz-Nj-c6S" appends="YES" id="wld-bd-f4s"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="instagrid" destination="SFY-et-vEY" id="cQe-Fx-rSU"/>
-                        <outlet property="monBoutton2" destination="hi7-Sp-7o7" id="zyB-hm-fj1"/>
                         <outlet property="photoView" destination="YPa-9b-fF7" id="LQA-dN-ASw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="4tz-Nj-c6S"/>
+                <swipeGestureRecognizer direction="right" id="FcX-QK-mhZ">
+                    <connections>
+                        <action selector="swipePhotoView:" destination="BYZ-38-t0r" id="Qrp-dN-Uua"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Combined Shape" width="48" height="48"/>
+    </resources>
 </document>
