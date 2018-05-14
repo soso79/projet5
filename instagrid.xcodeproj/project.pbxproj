@@ -14,9 +14,9 @@
 		0F8AEDFC2059C4DB00CF8D55 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8AEDFB2059C4DB00CF8D55 /* ThirstySoftRegular.otf */; };
 		0FA2886F2051A961002590FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2886E2051A961002590FA /* AppDelegate.swift */; };
 		0FA288712051A961002590FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA288702051A961002590FA /* ViewController.swift */; };
-		0FA288742051A961002590FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA288722051A961002590FA /* Main.storyboard */; };
 		0FA288762051A961002590FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA288752051A961002590FA /* Assets.xcassets */; };
 		0FA288792051A961002590FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA288772051A961002590FA /* LaunchScreen.storyboard */; };
+		0FAF298C20A3619000EB5C17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FAF298A20A3619000EB5C17 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		0FA2886B2051A961002590FA /* instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA2886E2051A961002590FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FA288702051A961002590FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0FA288732051A961002590FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FA288752051A961002590FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FA288782051A961002590FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FA2887A2051A961002590FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FAF298B20A3619000EB5C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 		0F4F13CD205A87BB005C556D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0FA288722051A961002590FA /* Main.storyboard */,
+				0FAF298A20A3619000EB5C17 /* Main.storyboard */,
 				0F00CF7920760DE000996992 /* PhotoView.swift */,
 			);
 			path = View;
@@ -138,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "sofiane bahri";
 				TargetAttributes = {
 					0FA2886A2051A961002590FA = {
@@ -173,8 +173,8 @@
 				0FA288792051A961002590FA /* LaunchScreen.storyboard in Resources */,
 				0FA288762051A961002590FA /* Assets.xcassets in Resources */,
 				0F8AEDFC2059C4DB00CF8D55 /* ThirstySoftRegular.otf in Resources */,
+				0FAF298C20A3619000EB5C17 /* Main.storyboard in Resources */,
 				0F8AEDFA2059C4BA00CF8D55 /* Delm-Medium.otf in Resources */,
-				0FA288742051A961002590FA /* Main.storyboard in Resources */,
 				0F5648BF205BE1DF0024AD0B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,20 +196,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0FA288722051A961002590FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FA288732051A961002590FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0FA288772051A961002590FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0FA288782051A961002590FA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0FAF298A20A3619000EB5C17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FAF298B20A3619000EB5C17 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -229,6 +229,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -236,6 +237,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -286,6 +288,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -293,6 +296,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

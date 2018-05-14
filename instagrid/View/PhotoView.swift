@@ -9,7 +9,7 @@
 import UIKit
 
 class PhotoView: UIView {
-    
+    private var icon: UIImage!
    @IBOutlet private var label: UILabel!
    @IBOutlet private var monBoutton: UIButton!
    @IBOutlet private var monBoutton2: UIButton!
@@ -33,6 +33,7 @@ class PhotoView: UIView {
         case .layout1:
             monBoutton .isHidden = true
             monBoutton3 .isHidden = false
+            
         case .layout2:
             monBoutton .isHidden = false
             monBoutton3 .isHidden = true

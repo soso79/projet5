@@ -13,14 +13,14 @@ class ViewController: UIViewController,
     UINavigationControllerDelegate
     
 {
-
+    var icon: UIImage!
     var currentButton: UIButton?
     @IBOutlet weak var photoView: PhotoView!
     @IBOutlet weak var instagrid: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //ajout du geste swipe
+        //ajout du geste swipe.
         let swipeGesture = UISwipeGestureRecognizer(target: self, action:#selector( swipePhotoView(_:)))
         swipeGesture.direction = .up
         self.photoView.addGestureRecognizer(swipeGesture)
@@ -31,19 +31,35 @@ class ViewController: UIViewController,
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func didTapLayout1Button(_ sender: UIButton) {
-        changeLayout(style: .layout1)
+    // bouton pour changer le layout
+    
+    @IBAction func didTapLayoutButton(_ sender: UIButton) {
+        if sender.isSelected {
+            sender.isSelected = false
+        }else {
+            sender.isSelected = true
+            
+        }
+        switch sender.tag {
+        case 0:
+            changeLayout(style: .layout1)
+        case 1:
+            changeLayout(style: .layout2)
+        case 2:
+            changeLayout(style: .layout3)
+            
+        default: break
+        }
+        
+        
+        
+        sender.setImage(#imageLiteral(resourceName: "icon"), for: .selected)
+        
         
     }
     
-    @IBAction func didTapLayout2Button(_ sender: UIButton) {
-        changeLayout(style: .layout2)
-    }
     
     
-    @IBAction func didTapLayout3Button(_ sender: UIButton) {
-        changeLayout(style:.layout3)
-    }
     
     private func changeLayout( style: PhotoView.Style){
         photoView.style = style
@@ -59,6 +75,25 @@ class ViewController: UIViewController,
             currentButton = sender
         }
     }
+    
+    // Bonus.
+    @IBAction func openCameraButton(_ sender: UIButton!) {
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        
+            currentButton = sender
+        
+        
+        }
+    }
+    
+    
+    
      func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         print(pickedImage)
