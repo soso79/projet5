@@ -13,6 +13,7 @@ class ViewController: UIViewController,
     UINavigationControllerDelegate
     
 {
+    var myVc: UIViewController?
     var icon: UIImage!
     var currentButton: UIButton?
     @IBOutlet weak var photoView: PhotoView!
@@ -33,7 +34,7 @@ class ViewController: UIViewController,
     
     // bouton pour changer le layout
     
-    @IBAction func didTapLayoutButton(_ sender: UIButton) {
+    @IBAction func didTapLayoutButton(_ sender: UIButton!) {
         if sender.isSelected {
             sender.isSelected = false
         }else {
@@ -64,8 +65,23 @@ class ViewController: UIViewController,
     private func changeLayout( style: PhotoView.Style){
         photoView.style = style
     }
-    
+    // Mise en place de UIaction mais ne fonctionne pas
     @IBAction func openButtonLibrairy(_ sender: UIButton!) {
+
+        let actionsheet = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        actionsheet.addAction(UIAlertAction(title: "Open Camera", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+        }))
+        
+        actionsheet.addAction(UIAlertAction(title: "Choose Exisiting Photo", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+        }))
+        actionsheet.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: { (action) -> Void in
+            
+        }))
+        myVc?.present(actionsheet, animated: true, completion: nil)
+        
+        
+        
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self

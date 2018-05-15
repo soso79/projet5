@@ -15,7 +15,7 @@ class PhotoView: UIView {
    @IBOutlet private var monBoutton2: UIButton!
    @IBOutlet private var monBoutton3: UIButton!
    @IBOutlet private var monBoutton4: UIButton!
-  
+   @IBOutlet private var cameraButton: UIButton!
     
     enum Style {
         case layout1, layout2, layout3
