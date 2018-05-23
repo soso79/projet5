@@ -67,7 +67,7 @@ class ViewController: UIViewController,
     }
     
     
-    
+    // bouton qui ouvre la photo librairy
     func openButtonLibrairy(_ sender: UIButton!) {
 
             if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
@@ -97,8 +97,9 @@ class ViewController: UIViewController,
         }
     }
     
-    // ouvre la pop up avec le choix camera ou photo librairie
+    // ouvre la pop up avec le choix camera ou photo librairy ou cancel
     @IBAction func selectPhotoButton(sender: UIButton!){
+        
         let actionsheet = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
         
         actionsheet.addAction(UIAlertAction(title: "Open Camera", style: UIAlertActionStyle.default, handler: { (action) -> Void in
