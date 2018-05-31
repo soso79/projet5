@@ -26,6 +26,7 @@ class ViewController: UIViewController,
         //ajout du geste swipe.
         let swipeGesture = UISwipeGestureRecognizer(target: self, action:#selector( swipePhotoView(_:)))
         swipeGesture.direction = .up
+        swipeGesture.direction = .left
         self.photoView.addGestureRecognizer(swipeGesture)
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -37,6 +38,7 @@ class ViewController: UIViewController,
     // bouton pour changer le layout
     @IBAction func didTapLayoutButton(_ sender: UIButton!) {
        // permet d afficher le signe seulement sur le bouton selectionné
+    
         for button in self.layOutButtonCollection{
             if button.tag == sender.tag{
                 button.isSelected = true;
@@ -44,6 +46,7 @@ class ViewController: UIViewController,
             }else{
                 button.isSelected = false
             }
+            
         }
         // change le layout
         switch sender.tag {
@@ -128,7 +131,7 @@ class ViewController: UIViewController,
         
     }
     
-    // ici on share une image
+    // ici on share une image avec le geste
     @IBAction func swipePhotoView(_ sender: UISwipeGestureRecognizer) {
         let picture = UIImage(view: photoView)
         let activityVc = UIActivityViewController(activityItems:[picture] , applicationActivities: nil)
