@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,39 +21,40 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFY-et-vEY">
-                                <rect key="frame" x="128.5" y="20" width="118.5" height="39"/>
+                                <rect key="frame" x="147.66666666666666" y="20" width="118.66666666666666" height="39"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="^" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxi-g3-7LQ">
-                                <rect key="frame" x="184" y="79" width="7.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="^" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxi-g3-7LQ">
+                                <rect key="frame" x="203.33333333333334" y="79" width="7.6666666666666572" height="20.333333333333329"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrE-hM-8cW">
-                                <rect key="frame" x="128.5" y="109.5" width="118.5" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrE-hM-8cW">
+                                <rect key="frame" x="148" y="109.33333333333333" width="118.33333333333331" height="21.999999999999986"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" hidden="YES"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPa-9b-fF7" userLabel="PhotoView" customClass="PhotoView" customModule="instagrid" customModuleProvider="target">
-                                <rect key="frame" x="20" y="151.5" width="335" height="335"/>
+                                <rect key="frame" x="20" y="151.33333333333337" width="374" height="374"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dg1-Jf-coA">
-                                        <rect key="frame" x="5" y="5" width="325" height="325"/>
+                                        <rect key="frame" x="5" y="5" width="364" height="364"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5JN-ie-1PD">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="160"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="179.66666666666666"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ra4-uY-i8L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="179.66666666666666"/>
                                                         <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="tintColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -63,7 +64,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi7-Sp-7o7">
-                                                        <rect key="frame" x="165" y="0.0" width="160" height="160"/>
+                                                        <rect key="frame" x="184.66666666666663" y="0.0" width="179.33333333333337" height="179.66666666666666"/>
                                                         <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" image="Combined Shape"/>
                                                         <connections>
@@ -73,10 +74,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KcI-Nw-Xw5">
-                                                <rect key="frame" x="0.0" y="165" width="325" height="160"/>
+                                                <rect key="frame" x="0.0" y="184.66666666666663" width="364" height="179.33333333333337"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsf-pM-wLf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="179.66666666666666" height="179.33333333333334"/>
                                                         <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="tintColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" image="Combined Shape">
@@ -87,7 +88,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-ZE-znz">
-                                                        <rect key="frame" x="165" y="0.0" width="160" height="160"/>
+                                                        <rect key="frame" x="184.66666666666663" y="0.0" width="179.33333333333337" height="179.33333333333334"/>
                                                         <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Combined Shape">
@@ -121,7 +122,7 @@
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-L6-90e">
-                                <rect key="frame" x="20" y="567" width="335" height="80"/>
+                                <rect key="frame" x="20" y="636" width="374" height="80"/>
                                 <subviews>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLn-JW-cMv" userLabel="layOut1">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -136,7 +137,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wd-Mq-TZ3" userLabel="layOut2">
-                                        <rect key="frame" x="127.5" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="147" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="6kb-qs-5eM"/>
@@ -148,7 +149,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3no-eS-2gH" userLabel="layOut3">
-                                        <rect key="frame" x="255" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="294" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" red="0.99992686509999995" green="1" blue="0.99987357850000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="7D8-ej-XmI"/>
@@ -163,13 +164,13 @@
                                 <variation key="heightClass=compact" axis="vertical"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe left to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEB-ep-35y">
-                                <rect key="frame" x="10" y="208" width="125" height="22"/>
+                                <rect key="frame" x="10" y="227.33333333333334" width="125" height="22"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6c-a6-NuA">
-                                <rect key="frame" x="67" y="177.5" width="11" height="20.5"/>
+                                <rect key="frame" x="67.333333333333329" y="197" width="10.666666666666671" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -211,14 +212,14 @@
                                 <exclude reference="G6c-a6-NuA"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="UDE-kY-ply"/>
                                 <exclude reference="5Mx-An-4x4"/>
-                                <exclude reference="Ilj-Y0-r4U"/>
-                                <exclude reference="TMU-go-XYi"/>
                                 <exclude reference="Lw0-MI-fRX"/>
                                 <exclude reference="P1L-gB-pdG"/>
                                 <exclude reference="a7V-Fs-O0U"/>
                                 <exclude reference="mt8-r0-2Q1"/>
+                                <exclude reference="UDE-kY-ply"/>
+                                <exclude reference="Ilj-Y0-r4U"/>
+                                <exclude reference="TMU-go-XYi"/>
                                 <exclude reference="1cC-lL-niJ"/>
                                 <exclude reference="iDW-vy-g2x"/>
                                 <exclude reference="oR3-3H-NsN"/>
@@ -226,23 +227,29 @@
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="subviews">
+                                <exclude reference="Oxi-g3-7LQ"/>
+                                <exclude reference="IrE-hM-8cW"/>
                                 <include reference="BEB-ep-35y"/>
                                 <include reference="G6c-a6-NuA"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5P6-wj-hSt"/>
-                                <include reference="UDE-kY-ply"/>
-                                <exclude reference="qmc-w8-lsH"/>
                                 <include reference="5Mx-An-4x4"/>
-                                <exclude reference="80Y-J9-pDY"/>
-                                <include reference="Ilj-Y0-r4U"/>
-                                <include reference="TMU-go-XYi"/>
                                 <exclude reference="Lw0-MI-fRX"/>
                                 <include reference="P1L-gB-pdG"/>
                                 <include reference="a7V-Fs-O0U"/>
                                 <include reference="mt8-r0-2Q1"/>
+                                <exclude reference="5P6-wj-hSt"/>
+                                <include reference="UDE-kY-ply"/>
+                                <exclude reference="qmc-w8-lsH"/>
+                                <exclude reference="80Y-J9-pDY"/>
+                                <include reference="Ilj-Y0-r4U"/>
+                                <include reference="TMU-go-XYi"/>
+                                <exclude reference="jVv-61-Qub"/>
                                 <include reference="1cC-lL-niJ"/>
                                 <exclude reference="kVN-0m-t6u"/>
+                                <exclude reference="Aqa-3N-4B4"/>
+                                <exclude reference="Crh-qD-oO4"/>
+                                <exclude reference="GeE-61-LA3"/>
                                 <exclude reference="Rnx-l5-5Ck"/>
                                 <exclude reference="NcY-ge-9Va"/>
                                 <include reference="iDW-vy-g2x"/>
@@ -253,6 +260,8 @@
                     <connections>
                         <outlet property="instagrid" destination="SFY-et-vEY" id="cQe-Fx-rSU"/>
                         <outlet property="photoView" destination="YPa-9b-fF7" id="LQA-dN-ASw"/>
+                        <outlet property="swipeLeft" destination="BEB-ep-35y" id="TrM-PG-jNL"/>
+                        <outlet property="swipeUp" destination="IrE-hM-8cW" id="lLo-0M-00J"/>
                         <outletCollection property="layOutButtonCollection" destination="2wd-Mq-TZ3" collectionClass="NSMutableArray" id="NYz-8e-cXP"/>
                         <outletCollection property="layOutButtonCollection" destination="3no-eS-2gH" collectionClass="NSMutableArray" id="5tH-KD-QPw"/>
                         <outletCollection property="layOutButtonCollection" destination="FLn-JW-cMv" collectionClass="NSMutableArray" id="WqI-S1-9pE"/>

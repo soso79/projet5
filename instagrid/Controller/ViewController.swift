@@ -14,8 +14,13 @@ class ViewController: UIViewController,
     
     
 {
+    
+    @IBOutlet weak var swipeUp: UILabel!
+    
+    @IBOutlet weak var swipeLeft: UILabel!
     // outlet collection boutton layout
     @IBOutlet var layOutButtonCollection: [UIButton]!
+    var orientation: UIDeviceOrientation!
     var icon: UIImage!
     var currentButton: UIButton?
     @IBOutlet weak var photoView: PhotoView!
@@ -61,7 +66,9 @@ class ViewController: UIViewController,
             
         }
         
-        sender.setImage(#imageLiteral(resourceName: "icon"), for: .selected)
+        sender.setImage(#imageLiteral(resourceName: "Selected"), for: .selected)
+        
+        
         
     }
     
