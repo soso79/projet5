@@ -16,17 +16,16 @@ class PhotoView: UIView {
    @IBOutlet private var monBoutton3: UIButton!
    @IBOutlet private var monBoutton4: UIButton!
    
+    // enumeration about layout style in application
     
     enum Style {
-        case layout1, layout2, layout3
+           case layout1, layout2, layout3
     }
     
     var style: Style = .layout2 {
-        
     didSet {
     setStyle(style)
-    
-      }
+     }
     }
     private func setStyle(_ style: Style){
         switch style {
@@ -37,12 +36,12 @@ class PhotoView: UIView {
         case .layout2:
             monBoutton .isHidden = false
             monBoutton3 .isHidden = true
+            
         case .layout3:
             monBoutton .isHidden = false
             monBoutton3 .isHidden = false
         }
         
     }
- 
 }
 

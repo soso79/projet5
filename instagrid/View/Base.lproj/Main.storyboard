@@ -118,7 +118,6 @@
                                     <outlet property="monBoutton2" destination="hi7-Sp-7o7" id="bUK-vO-jmr"/>
                                     <outlet property="monBoutton3" destination="dsf-pM-wLf" id="6y8-f5-tGn"/>
                                     <outlet property="monBoutton4" destination="fAq-ZE-znz" id="GO8-QT-QYF"/>
-                                    <outletCollection property="gestureRecognizers" destination="FcX-QK-mhZ" appends="YES" id="ouQ-XZ-fuB"/>
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-L6-90e">
@@ -241,16 +240,16 @@
                                 <exclude reference="5P6-wj-hSt"/>
                                 <include reference="UDE-kY-ply"/>
                                 <exclude reference="qmc-w8-lsH"/>
+                                <exclude reference="Aqa-3N-4B4"/>
+                                <exclude reference="Crh-qD-oO4"/>
                                 <exclude reference="80Y-J9-pDY"/>
                                 <include reference="Ilj-Y0-r4U"/>
                                 <include reference="TMU-go-XYi"/>
                                 <exclude reference="jVv-61-Qub"/>
-                                <include reference="1cC-lL-niJ"/>
-                                <exclude reference="kVN-0m-t6u"/>
-                                <exclude reference="Aqa-3N-4B4"/>
-                                <exclude reference="Crh-qD-oO4"/>
                                 <exclude reference="GeE-61-LA3"/>
                                 <exclude reference="Rnx-l5-5Ck"/>
+                                <include reference="1cC-lL-niJ"/>
+                                <exclude reference="kVN-0m-t6u"/>
                                 <exclude reference="NcY-ge-9Va"/>
                                 <include reference="iDW-vy-g2x"/>
                                 <include reference="oR3-3H-NsN"/>
@@ -268,11 +267,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="FcX-QK-mhZ">
-                    <connections>
-                        <action selector="swipePhotoView:" destination="BYZ-38-t0r" id="Qrp-dN-Uua"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="31.690140845070424" y="31.875"/>
         </scene>

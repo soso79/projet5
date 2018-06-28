@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0F00CF7920760DE000996992 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
-		0F320222209B6C4400D5D007 /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+extension.swift"; path = "instagrid/Supporting Files/UIImage+extension.swift"; sourceTree = SOURCE_ROOT; };
+		0F320222209B6C4400D5D007 /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+extension.swift"; path = "instagrid/Model/UIImage+extension.swift"; sourceTree = SOURCE_ROOT; };
 		0F5648BE205BE1DF0024AD0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0F8AEDF92059C4BA00CF8D55 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		0F8AEDFB2059C4DB00CF8D55 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
@@ -48,6 +48,7 @@
 		0F4F13CC205A87A4005C556D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0F320222209B6C4400D5D007 /* UIImage+extension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -72,7 +73,6 @@
 		0F4F13D1205A8DC4005C556D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0F320222209B6C4400D5D007 /* UIImage+extension.swift */,
 				0FA288772051A961002590FA /* LaunchScreen.storyboard */,
 				0FA2886E2051A961002590FA /* AppDelegate.swift */,
 				0F8AEDF92059C4BA00CF8D55 /* Delm-Medium.otf */,
